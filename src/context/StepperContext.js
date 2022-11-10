@@ -28,7 +28,7 @@ export const StepperProvider = (props) => {
   const prevPage = () => {
     setPage(page - 1);
   };
-  console.log(page, "page");
+
   const handleChange = (prop) => (event) => {
     setStepInfo({ ...stepInfo, [prop]: event.target.value });
   };

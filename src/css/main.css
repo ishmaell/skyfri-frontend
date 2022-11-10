@@ -32,19 +32,19 @@ section .title {
 }
 
 section .flex-area {
-  @apply  flex justify-between gap-5
+  @apply  flex justify-between gap-5 lg:flex-row flex-col;
 }
 
 section .flex-area {
-  @apply  flex justify-between gap-5
+  @apply  flex justify-between gap-5;
 }
 
 section .flex-area .col-1 {
-  @apply w-2/3
+  @apply lg:w-1/2 w-full;
 }
 
 section .flex-area .col-2 {
-  @apply w-2/6
+  @apply lg:w-1/2 w-full;
 }
 
 section .section-action {

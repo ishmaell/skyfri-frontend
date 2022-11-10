@@ -1,11 +1,12 @@
 import React from 'react';
 import { FormGroup } from './FormGroup';
 
-export const Select = ({ label, name, type, inputClasses, options, placeholder }) => {
+export const Select = ({ label, name, type, inputClasses, options, placeholder, error, register }) => {
   return (
     <FormGroup>
       {label && <label htmlFor={name}>{label}</label>}
       <select
+        {...register(name)}
         className={inputClasses}
         type={type}
         autoComplete="on"
@@ -19,6 +20,7 @@ export const Select = ({ label, name, type, inputClasses, options, placeholder }
           </option>
         ))}
       </select>
+      {error}
     </FormGroup>
   )
 }
