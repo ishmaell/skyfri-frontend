@@ -19,7 +19,7 @@ const Agreement = () => {
     mode: 'all',
     resolver: yupResolver(AgreementSchema),
     defaultValues: {
-      billing: 'Monthly'
+      billingFrequency: 'Monthly'
     }
   });
 
