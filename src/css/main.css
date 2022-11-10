@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './form.css';
+@import './button.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+}
+
+.main-app {
+  @apply p-10;
+}
+
+.container {
+  @apply max-w-6xl m-auto;
+}
+
+section {
+  @apply py-10;
+}
+
+section .title {
+  @apply font-semibold text-lg mb-7;
+}
+
+section .flex-area {
+  @apply  flex justify-between gap-5
+}
+
+section .flex-area {
+  @apply  flex justify-between gap-5
+}
+
+section .flex-area .col-1 {
+  @apply w-2/3
+}
+
+section .flex-area .col-2 {
+  @apply w-2/6
+}
+
+section .section-action {
+  @apply flex gap-3 mt-40;
+}
+

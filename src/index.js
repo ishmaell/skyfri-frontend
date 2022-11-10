@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './css/main.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { StepperProvider } from './context/StepperContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StepperProvider>
+      <App />
+    </StepperProvider>
   </React.StrictMode>
 );
 

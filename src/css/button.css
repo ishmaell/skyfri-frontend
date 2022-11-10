@@ -1,0 +1,16 @@
+.button {
+  @apply font-semibold rounded text-center text-base bg-transparent px-4 py-2;
+}
+
+.button:focus {
+  @apply outline-none;
+}
+
+.button:disabled {
+  @apply opacity-75 cursor-not-allowed;
+}
+
+.button.primary {
+  @apply bg-[#491351] text-white;
+}
+
