@@ -1,4 +1,4 @@
-.form-group {
+.form-group, .radio-group {
   @apply mb-5 relative;
 }
 
@@ -40,5 +40,5 @@ label, .radio-group p {
 }
 
 .error-message {
-  @apply text-red-500 px-1 text-sm absolute left-0 -bottom-6;
+  @apply text-red-500 px-1 text-sm;
 }
