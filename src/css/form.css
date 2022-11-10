@@ -1,0 +1,44 @@
+.form-group {
+  @apply mb-5 relative;
+}
+
+.radio-group-flex {
+  @apply flex gap-5;
+}
+
+.radio-group-flex label {
+  @apply font-normal cursor-pointer flex items-center;
+}
+
+.radio-group-flex input {
+  @apply w-5 h-5;
+}
+
+.radio-group-flex label span {
+  @apply ml-3;
+}
+
+label, .radio-group p {
+  @apply mb-2.5 block font-semibold;
+}
+
+.input {
+  @apply h-10 w-full border-gray-200 bg-transparent border-1 px-4 text-base outline-0 rounded focus:border-black;
+}
+
+.input.select {
+  @apply border-0 border-b-1 rounded-none p-0;
+}
+
+.input:disabled {
+  @apply bg-gray-200 !important;
+}
+
+
+.input-error {
+  @apply border-red-500 border-2 !important;
+}
+
+.error-message {
+  @apply text-red-500 px-1 text-sm absolute left-0 -bottom-6;
+}
